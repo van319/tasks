@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper{
+  .head{
+    width:100%;
+    height:10vh;
+    background-image: url("kaisya.jpg"); 
+    background-position: bottom;
+  
+      .head-right{
+      width:30%;
+      height:10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        .name{
+        height:5vh;
+        width:70%;
+        display: flex;
+          .task{
+            color:white;
+          }
+        }
+      }
+    }
+  
+  .said-content{
+  height:10vh;
+  width:100%;
+  float:left;
+    &-head{
+    background-color:#5c514f;
+    height:5vh;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    }
+      .task{
+        color: lightgoldenrodyellow;
+        line-height: 5vh;
+      }
+      .said-content-head-box-edit{
+        line-height: 5vh;
+        a{
+          text-decoration: none;
+          color: white;
+        }
+
+      }
+
+      &-body{
+      overflow: scroll;
+      height:75vh;
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+
+        .tasks{
+        background:white;
+        height:150px;
+        width:25%;
+        border: double 5px #4ec4d3;
+        position: relative;
+          .tasks-line{
+          }
+        }
+      }
+    &-footer{
+      background-color:khaki;
+      height:10vh;
+    }
+  }
+}
