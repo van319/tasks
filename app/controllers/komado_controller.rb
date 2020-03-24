@@ -1,0 +1,2 @@
+class KomadoController < ApplicationController
+end

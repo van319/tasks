@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper{
+  height:100vh;
+  width:100%;
+  .head{
+    width:100%;
+    height:10vh;
+    background-image: url("kaisya.jpg"); 
+    background-position: bottom;
+  
+      .head-l{
+      width:30%;
+      height:10vh;
+      padding:10px 0 0 60px;
+      
+      
+        li{
+          list-style: none;
+          font-size: 20px;
+          color:black;
+        }
+ 
+        .name{
+        height:5vh;
+        width:70%;
+        display: flex;
+          .task{
+            color:white;
+          }
+        }
+      }
+    }
+  
+  .said-content{
+  height:5vh;
+  width:100%;
+  float:left;
+    &-head{
+    background-color:#5c514f;
+    height:5vh;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    }
+      .task{
+        margin-left:100px;
+        color:white;
+        line-height: 5vh;
+      }
+      .said-content-head-box-edit{
+        margin-right:80px;
+        line-height: 5vh;
+        a{
+          text-decoration: none;
+          color: white;
+        }
+
+      }
+
+    &-body{
+    overflow: scroll;
+    height:80vh;
+    width:100%;
+    background-color: #ffe0b6;
+
+    .task-box{
+      height:150px;
+      width:25%;
+      padding:5px;
+      float:left;
+      .tasks{
+        height:140px;
+        background:white;
+        border: double 5px #4ec4d3;
+        position: relative;
+
+        .tasks-name {}
+        .tasks-text {}
+        .tasks-day {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          
+        }
+        }
+      }
+    }
+
+    &-footer{
+      background-color:khaki;
+      height:10vh;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.oowaku{
+  background-color: yellow;
+  height:100vh;
+  width:100%;
+  
+  .head{
+    background-color: #f9a980;
+    height:20vh;
+  }
+  .main{
+  background-color: #ffe0b6;
+  height:80vh;
+  padding:60px 100px 0 140px;
+    .textbox_a{
+      width: 600px;
+      padding: 5px 8px;
+      border-radius: 6px;
+      border-top: 1px solid #aaa;
+      border-left: 1px solid #aaa;
+      border-right: 2px solid #aaa;
+      border-bottom: 2px solid #aaa;
+      font-size: 16px;
+      display:block;
+    }
+    .textbox_b{
+      width: 600px;
+      height:400px;
+      padding: 5px 8px;
+      border-radius: 6px;
+      border-top: 1px solid #aaa;
+      border-left: 1px solid #aaa;
+      border-right: 2px solid #aaa;
+      border-bottom: 2px solid #aaa;
+      font-size: 16px;
+      display:block;
+    }
+  }
+}
