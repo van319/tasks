@@ -10,8 +10,14 @@
   .main{
   background-color: #ffe0b6;
   height:80vh;
-  padding:60px 100px 0 140px;
-    .textbox_a{
+  .field{
+    margin-bottom: 30px;
+  }
+    label{
+      display:block;
+      text-align: center 
+    }
+    #task_task{
       width: 600px;
       padding: 5px 8px;
       border-radius: 6px;
@@ -21,8 +27,11 @@
       border-bottom: 2px solid #aaa;
       font-size: 16px;
       display:block;
+      margin:0 auto
+
+
     }
-    .textbox_b{
+    #task_tasktext{
       width: 600px;
       height:400px;
       padding: 5px 8px;
@@ -33,6 +42,12 @@
       border-bottom: 2px solid #aaa;
       font-size: 16px;
       display:block;
+      margin:0 auto
+    }
+    .btn{
+      display:block;
+      margin:0 auto
+
     }
   }
 }
