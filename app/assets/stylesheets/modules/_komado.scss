@@ -5,11 +5,17 @@
   
   .head{
     background-color: #f9a980;
-    height:20vh;
+    height:5vh;
   }
   .main{
   background-color: #ffe0b6;
-  height:80vh;
+  height:95vh;
+  .close{
+    text-align: center;
+    display: block;
+    padding-top:80px;
+    .a{}
+  }
   .field{
     margin-bottom: 30px;
   }
@@ -18,7 +24,7 @@
       text-align: center 
     }
     #task_task{
-      width: 600px;
+      width: 300px;
       padding: 5px 8px;
       border-radius: 6px;
       border-top: 1px solid #aaa;
@@ -32,8 +38,8 @@
 
     }
     #task_tasktext{
-      width: 600px;
-      height:400px;
+      width: 300px;
+      height:200px;
       padding: 5px 8px;
       border-radius: 6px;
       border-top: 1px solid #aaa;
@@ -46,8 +52,10 @@
     }
     .btn{
       display:block;
-      margin:0 auto
-
+      margin:0 auto;
+    }
+    .a{
+      text-align:center;
     }
   }
 }

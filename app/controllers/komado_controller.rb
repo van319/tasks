@@ -12,7 +12,7 @@ class KomadoController < ApplicationController
   def create
     @task = Task.new(task_params)
     @task.save
-    render :index
+    render :close
   end
 
   def update
