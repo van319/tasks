@@ -1,8 +1,8 @@
 .wrapper
   .head
     .head-l 
-      %li bbb
-      %li aaa
+      %li 株式会社 Task-shear
+      %li Task管理課
   .said-content
     .said-content-head
       %p.task タスク一覧
@@ -12,16 +12,21 @@
         タスクの追加
 
   .said-content-body
-    .task-box
-      .tasks 
-        .tasks-name 
-          =@task.first
-          =@task.last
+    - @tasks.each_with_index do |task,index| 
+      .task-box{:id => "task-box_#{index}"}
+        .tasks 
+          .task-d-h
+            %a{:href  => edit_task_path(task.id)}編集
+            %a{"data-method" => "delete", :href => task_path(task.id), :rel => "nofollow"} 削除
+          .tasks-name 
+            作業名：
+            =task.name
+          .tasks-text 
+            作業内容：
+            =task.tasktext
+          %button{:id => "img_open_#{index}"} 確認
+          %img{:src => "https://t.pimg.jp/035/424/702/1/35424702.jpg"}/
+          .tasks-day
+            =task.created_at.strftime("%Y年%m月%d日 %H時%M分")
           
-        .tasks-text 
 
-        .tasks-day
-  
-
-
-  .said-content-footer

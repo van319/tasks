@@ -49,46 +49,66 @@
         color:white;
         line-height: 5vh;
       }
-      .said-content-head-box-edit{
-      }
+
         a{
           margin-right:80px;
           line-height: 5vh;
           text-decoration: none;
           color: white;
         }
+      }
 
-    &-body{
+  .said-content-body{
     overflow: scroll;
-    height:80vh;
+    height:85vh;
     width:100%;
+    background-image: url(wahuu.jpg);
     background-color: #ffe0b6;
 
     .task-box{
-      height:150px;
-      width:25%;
+      height:200px;
+      width:20%;
       padding:5px;
       float:left;
+     
       .tasks{
-        height:140px;
+        height:200px;
         background:white;
         border: double 5px #4ec4d3;
         position: relative;
 
-        .tasks-name {}
-        .tasks-text {}
+
+        .tasks-name {
+          background-color: #CD853F;
+          color:greenyellow;
+        }
+        .tasks-text {
+          color:black;
+        }
         .tasks-day {
+          color:gray;
           position: absolute;
           right: 0;
           bottom: 0;
-         }
+        }
+        .task-d-h {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        img{
+          height:50px;
+          width:50px;
+          position: absolute;
+          right: 0;
+          bottom: 15px;
+        }
+        button{
+          position: absolute;
+          right: 60px;
+          bottom: 20px;
+        }
         }
       }
     }
-
-    &-footer{
-      background-color:khaki;
-      height:10vh;
-    }
-  }
 }

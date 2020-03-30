@@ -3,8 +3,8 @@
   .main
     = form_for @task,:url => {:action => :create} do |f|
       .field
-        = f.label :task, "タスク名"
-        = f.text_field :task ,placeholder: '作業名を入力して下さい'
+        = f.label :name, "タスク名"
+        = f.text_field :name ,placeholder: '作業名を入力して下さい'
       .field
         = f.label :tasktext, "作業内容"
         = f.text_area :tasktext ,placeholder: '作業内容を入力して下さい'

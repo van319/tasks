@@ -5,7 +5,7 @@ class KomadoController < ApplicationController
 
   def new
     @task = Task.new
-    @task.tasks << current_task
+    @task.names << current_name
     @task.tasktexts << current_tasktext
   end
 
@@ -15,12 +15,10 @@ class KomadoController < ApplicationController
     render :close
   end
 
-  def update
-  end
-
+ 
 
 private
 def task_params
-  params.require(:task).permit(:task, :tasktext )
+  params.require(:task).permit(:name, :tasktext)
 end
 end

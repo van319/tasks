@@ -1,0 +1,11 @@
+.oowaku
+  .head
+  .main
+    = form_for @task do |f|
+      .field
+        = f.label :name, "タスク名"
+        = f.text_field :name
+      .field
+        = f.label :tasktext, "作業内容"
+        = f.text_area :tasktext  
+        = f.submit '編集を保存する', class: "btn"
